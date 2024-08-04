@@ -15,3 +15,15 @@ jobs:
 
         name: print chalo
         run: echo " chalo hello !!"
+
+
+jobs:
+  chaloworld:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print hellow
+        run: echo "hello world !!"
+
+        name: print chalo
+        run: echo " chalo hello !!"

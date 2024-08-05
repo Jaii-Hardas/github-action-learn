@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: print hellow
+      - name: print hello
         run: cat /etc/os-release

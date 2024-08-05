@@ -25,5 +25,4 @@ jobs:
       - name: print hellow
         run: echo "hello world !!"
 
-        name: print chalo
-        run: echo " chalo hello !!"
+        

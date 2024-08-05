@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: print hello
         run: echo "hello world !!"
 
@@ -20,9 +23,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: print hello
         run: echo "hello world !!"
 
       - name: print chalo
         run: echo "chalo hello !!"
-

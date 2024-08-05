@@ -13,7 +13,4 @@ jobs:
       - name: print hello
         run: echo "hello world !!"
 
-      - name: print chalo
-        run: echo "chalo hello !!"
-
  

@@ -3,29 +3,23 @@ on:
   push:
     branches:
       -  main
-env: 
+env:
   JDK_VERSION: "openjdk11-jdk"
 jobs:
-  print-os-release:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print os-release
-        run: cat /etc/os-release
-        
   install-java:
     runs-on: ubuntu-latest
-    needs: print-os-release
     container:
       image: alpine:latest
     steps:
       - name: install java
         run: |
-           apk add --no-cache $ JDK_VERSION
-           java --version
+         apk add --no-cache $JDK_VERSION
+         java --version
 
   print-env:
     runs-on: ubuntu-latest
+    container:
+      image: alpine:latest
     steps:
-      - name: print env
+      - name: print environment variable
         run: echo JDK_VERSION
-      

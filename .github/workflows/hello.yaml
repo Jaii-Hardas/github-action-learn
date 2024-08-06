@@ -22,4 +22,4 @@ jobs:
       image: alpine:latest
     steps:
       - name: print environment variable
-        run: echo JDK_VERSION
+        run: $JDK_VERSION
